@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "818412453021",
+    "firebase_url": "https://clinica-aplicacion.firebaseio.com",
+    "project_id": "clinica-aplicacion",
+    "storage_bucket": "clinica-aplicacion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818412453021:android:86103c42ff70ed7ece6874",
+        "android_client_info": {
+          "package_name": "com.example.clinicalasalud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818412453021-fdvj08knrb0guiivcb0tqjif7ms176fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWOwyyPq_2OWuKrCibUjdXac0uWouuv0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818412453021-fdvj08knrb0guiivcb0tqjif7ms176fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

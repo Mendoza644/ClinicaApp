@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Clinica La Salud</string>
+    <string name="logo_app">logo app</string>
+    <string name="enter_email">Correo Electrónico</string>
+    <string name="enter_password">Contraseña</string>
+    <string name="log_in">Iniciar Sesión</string>
+    <string name="empty_email">Correo electrónico requerido</string>
+    <string name="empty_password">Contraseña requerida</string>
+    <string name="warning">Intenta de nuevo.</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="add_logs">Añadir Registros</string>
+    <string name="date_and_time">Fecha y Hora</string>
+    <string name="enter_name">Nombre del paciente</string>
+    <string name="enter_age">Edad</string>
+    <string name="enter_weight">Peso (kg)</string>
+    <string name="sickness">Consulta por</string>
+    <string name="history">Historia Clínica</string>
+    <string name="backgroundRecord">Antecedentes Personales</string>
+    <string name="physicalTest">Examen Físico</string>
+    <string name="diagnose">Diagnóstico</string>
+    <string name="treatment">Plan</string>
+    <string name="create_log">Crear Expediente</string>
+    <string name="time">00:00</string>
+    <string name="date">dd/mm/AAAA</string>
+    <string name="enter_phone">Teléfono</string>
+    <string name="dossier_done">Expediente Listo</string>
+    <string name="height">Altura (m)</string>
+    <string name="update_log_btn">Actualizar Expediente</string>
+    <string name="updated_dossier">Expediente actualizado.</string>
+    <string name="added_dossier">Expediente añadido.</string>
+    <string name="refresh_list">Actualizar</string>
+</resources>

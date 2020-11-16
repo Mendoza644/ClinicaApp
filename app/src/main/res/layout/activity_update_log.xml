@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateLog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/date"
+            android:padding="8dp"
+            android:textColor="#333"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/time"
+            android:padding="8dp"
+            android:textColor="#333"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/enter_name"
+            app:layout_constraintTop_toBottomOf="@id/time">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_age"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/enter_age"
+            app:layout_constraintTop_toBottomOf="@id/layout_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_height"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/height"
+            app:layout_constraintTop_toBottomOf="@id/layout_age">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_weight"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/enter_weight"
+            app:layout_constraintTop_toBottomOf="@id/layout_height">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/enter_phone"
+            app:layout_constraintTop_toBottomOf="@id/layout_weight">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_sickness"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/sickness"
+            app:layout_constraintTop_toBottomOf="@id/layout_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_sickness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_history"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/history"
+            app:layout_constraintTop_toBottomOf="@id/layout_sickness">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_background_record"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/backgroundRecord"
+            app:layout_constraintTop_toBottomOf="@id/layout_history">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_background_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_physical_test"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/physicalTest"
+            app:layout_constraintTop_toBottomOf="@id/layout_background_record">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_physical_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_diagnose"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/diagnose"
+            app:layout_constraintTop_toBottomOf="@id/layout_physical_test">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_diagnose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_treatment"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/treatment"
+            app:layout_constraintTop_toBottomOf="@id/layout_diagnose">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_treatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="#333333"
+                android:textSize="@dimen/_18sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="onCheckClicked"
+            android:text="@string/dossier_done"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_treatment" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_create_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:padding="16dp"
+            android:text="@string/update_log_btn"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_confirmation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
